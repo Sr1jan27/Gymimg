@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset  
+    * {
+        box-sizing: border-box;
+    } */
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(img/bg.jpg);
+        height: 1081px;
+        color: aliceblue;
+        font-size: 20px;
+        font-family: cursive;
+
+    }
+
+    .left {
+        /* border: 2px solid orange; */
+        display: inline-block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .left div {
+        line-height: 5px;
+        text-align: center;
+
+    }
+
+    .left img {
+        width: 125px;
+        height: 100px;
+        /* filter: invert(100%); */
+    }
+
+    .centre {
+        /* border: 2px solid pink; */
+        display: block;
+        width: 55%;
+        padding: 0px 0px;
+
+
+        margin: 20px auto;
+
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+
+    }
+
+    /* div{
+        color: white;
+        display: inline-block;
+        display: inline-block;
+        width: 30%;
+    } */
+    .navbar li {
+        color: white;
+        display: inline-block;
+        padding: 5px 30px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 7px 5px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: aqua;
+        text-decoration: underline;
+        padding: 7px 5px;
+    }
+
+    .btn {
+        margin: 10px 9px;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: black;
+        color: whitesmoke;
+    }
+    .btn:hover{
+        background-color: rgb(165, 165, 165);
+    }
+
+    .container {
+        border: 2px solid grey;
+        margin: 150px 50px;
+        padding: 80px 80px;
+        width: 50%;
+        border-radius: 50px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 199px;
+        padding: 15px;
+        border: 2px solid grey;
+        margin: 10px 0px;
+        border-radius: 10px;
+
+    }
+    .container.btn{
+        width: 50%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <!-- <strong><em>:LEFT</em></strong> -->
+            <img src="img/lg.png" alt="" id="logo">
+            <div> <strong>SrijanGYM</strong> </div>
+
+        </div>
+        <!-- cetre for navigation -->
+        <div class="centre">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <!-- <Strong><em>RIGHT</em></Strong> -->
+            <button class="btn"> &#128712 Info</button>
+            <button class="btn">Querry by Email</button>
+
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>Start your Resolution </h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Phone number">
+                </div>
+
+                <div class="form-group"> <input type="text" name="" placeholder="Enter Your Age"></div>
+
+                <div class="form-group"> <input type="text" name="" placeholder="Enter Your Time"></div>
+
+                <button class="btn">Submit</button>
+
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
